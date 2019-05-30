@@ -66,56 +66,105 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 body {
-	width: 800px;
-	margin: 0 auto;
-	padding-top: 3rem;
+	background: black;
 }
 
-/* nav */
+.container {
+	background: white;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 6rem 0;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+/* Nav */
+
 nav {
-	display: inline-block;
 	position: fixed;
 	top: 0;
-	width: 100%;
-	margin: 0 auto;
-	box-sizing: border-box;
+	width: 1000px;
+	text-align: center;
 	background: white;
+	padding: 1rem 0;
 }
 
-nav a {
-	padding: 1rem;
+nav ul {
+	display: inline-block;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0.5rem 1.5rem;
+}
+
+nav li:hover {
+	border: 1px solid black;
+}
+
+.active {
+	background: black;
+	color: white;
 }
 
 nav img {
+	vertical-align: middle;
+	padding: 0 0 0 4rem;
 }
 
 /* Header */
 
 header {
 	display: inline-block;
+	width: 100%;
+	padding: 0 3rem;
 }
 
 header div {
 	display: inline-block;
 	max-width: 49%;
-	box-sizing: border-box;
+	width: 450px;
+	padding: 2rem;
+	vertical-align: middle;
 }
+
+header.call-to-action {
+	padding-top: 50%;
+}
+
 header h1 {
 	font-size: 5rem;
+	text-align: center;
+}
+
+header button {
+	border: 1px solid black;
+	background: none;
+	min-width: 40%;
+	margin: 0 30%;
+	padding: 0.5rem 1rem;
+}
+
+header img {
 }
 
 /* Main Content */
 
 section:first-child {
 	display: inline-block;
-	width: 100;
+	width: 100%;
 	margin: 0 auto;
+	padding: 2rem;
 }
 
 section:first-child article {
 	display: inline-block;
 	max-width: 49%;
 	box-sizing: border-box;
+	margin: 2rem auto;
 }
 
 .middle-img {
@@ -126,10 +175,18 @@ section:last-child {
 	display: inline-block;
 	width: 100%;
 	margin: 0 auto;
+	padding: 2rem;
 }
 
 section:last-child article {
 	display: inline-block;
 	max-width: 30%;
 	box-sizing: border-box;
+	margin: 2rem auto;
+}
+
+/* Footer */
+
+footer {
+	margin: 2rem;
 }
